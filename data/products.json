@@ -20,6 +20,13 @@
       "description": "Descrição curta: cor, material, detalhes.",
       "price": "0",
       "image": ""
+    },
+    {
+      "name": "Off white ",
+      "category": "Ténis",
+      "description": "Tênis da marca off white, disponível na cor branca e preta ",
+      "price": "90000",
+      "image": "/images/uploads/img-20260808-wa0012.jpg"
     }
   ]
 }
