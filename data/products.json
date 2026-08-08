@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "Nome do ténis",
+      "category": "Ténis",
+      "description": "Descrição curta: cor, tamanhos disponíveis, material.",
+      "price": "0",
+      "image": ""
+    },
+    {
+      "name": "Nome da peça",
+      "category": "Roupa",
+      "description": "Descrição curta: cor, tamanhos disponíveis, material.",
+      "price": "0",
+      "image": ""
+    },
+    {
+      "name": "Nome do acessório",
+      "category": "Acessório",
+      "description": "Descrição curta: cor, material, detalhes.",
+      "price": "0",
+      "image": ""
+    }
+  ]
+}
