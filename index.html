@@ -665,5 +665,14 @@ document.getElementById('subscribeForm').addEventListener('submit', function(e){
 });
 </script>
 
+<!-- Netlify Identity: necessário aqui também para detetar o link de
+     convite/definição de senha que chega por e-mail e abre o site
+     principal (não o /admin) com um token na URL. -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {});
+  }
+</script>
 </body>
 </html>
