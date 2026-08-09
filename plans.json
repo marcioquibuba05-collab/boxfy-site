@@ -1,0 +1,44 @@
+{
+  "plans": [
+    {
+      "key": "starter",
+      "icon": "package",
+      "name": "Starter",
+      "price": "9.900",
+      "items_label": "1–2 itens por caixa",
+      "description": "A caixa de entrada, para experimentar o conceito.",
+      "benefits": ["1 a 2 produtos por caixa", "Categorias variadas", "Entrega mensal"],
+      "featured": false
+    },
+    {
+      "key": "plus",
+      "icon": "star",
+      "name": "Plus",
+      "price": "19.900",
+      "items_label": "2–3 itens por caixa",
+      "description": "Mais produtos e mais variedade em cada caixa.",
+      "benefits": ["2 a 3 produtos por caixa", "Maior variedade de categorias", "Entrega mensal"],
+      "featured": false
+    },
+    {
+      "key": "premium",
+      "icon": "gem",
+      "name": "Premium",
+      "price": "34.900",
+      "items_label": "3–4 itens por caixa",
+      "description": "Caixa premium, com produtos de maior valor.",
+      "benefits": ["3 a 4 produtos por caixa", "Prioridade em novidades", "Entrega mensal"],
+      "featured": true
+    },
+    {
+      "key": "vip",
+      "icon": "crown",
+      "name": "VIP",
+      "price": "59.900",
+      "items_label": "4+ itens por caixa",
+      "description": "A experiência exclusiva Boxfy.",
+      "benefits": ["4+ produtos selecionados", "Peças exclusivas e edições limitadas", "Atendimento prioritário"],
+      "featured": false
+    }
+  ]
+}
