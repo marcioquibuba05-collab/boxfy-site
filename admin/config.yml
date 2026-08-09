@@ -1,0 +1,70 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "pt"
+
+collections:
+  - name: "products"
+    label: "Produtos (Boxfy Store)"
+    label_singular: "Lista de produtos"
+    files:
+      - name: "products"
+        label: "Produtos"
+        file: "data/products.json"
+        fields:
+          - label: "Produtos"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — Kz {{fields.price}}"
+            fields:
+              - {label: "Nome do produto", name: "name", widget: "string"}
+              - label: "Categoria"
+                name: "category"
+                widget: "select"
+                options: ["Ténis", "Roupa", "Acessório", "Outro"]
+              - {label: "Descrição", name: "description", widget: "text", required: false}
+              - {label: "Preço (em Kz, só números)", name: "price", widget: "string"}
+              - {label: "Foto do produto", name: "image", widget: "image", required: false}
+              - label: "Disponibilidade"
+                name: "stock"
+                widget: "select"
+                options: ["Em stock", "Últimas unidades", "Esgotado"]
+                default: "Em stock"
+                required: false
+              - {label: "Tags (separadas por vírgula)", name: "tags", widget: "string", required: false, hint: "Ex: ténis, sneakers, branco"}
+
+  - name: "plans"
+    label: "Planos de Subscrição"
+    label_singular: "Lista de planos"
+    files:
+      - name: "plans"
+        label: "Planos"
+        file: "data/plans.json"
+        fields:
+          - label: "Planos"
+            name: "plans"
+            widget: "list"
+            summary: "{{fields.name}} — Kz {{fields.price}}/mês"
+            fields:
+              - label: "Identificador"
+                name: "key"
+                widget: "string"
+                hint: "Não mudar depois de criado (ex: starter, plus, premium, vip)"
+              - label: "Ícone"
+                name: "icon"
+                widget: "select"
+                options: ["package", "star", "gem", "crown"]
+              - {label: "Nome do plano", name: "name", widget: "string"}
+              - {label: "Preço mensal (em Kz, só números)", name: "price", widget: "string"}
+              - {label: "Badge de itens", name: "items_label", widget: "string", hint: "Ex: 1–2 itens por caixa"}
+              - {label: "Descrição curta", name: "description", widget: "text"}
+              - label: "Benefícios (um por linha)"
+                name: "benefits"
+                widget: "list"
+                field: {label: "Benefício", name: "item", widget: "string"}
+              - {label: "Destacar como recomendado?", name: "featured", widget: "boolean", default: false}
+
